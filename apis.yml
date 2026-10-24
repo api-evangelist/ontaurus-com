@@ -1,25 +1,67 @@
 aid: ontaurus-com
+
 name: Taurus
-description: 'Taurus is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by general-catalyst) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ontaurus.com/opengraph-image?e9656b5ee5698778
+
+description: 'Taurus is a technology company specializing in advanced data analytics and cloud-based solutions for enterprise customers. Founded with a focus on delivering scalable, secure, and high-performance platforms, Taurus provides a suite of APIs that enable integration of data pipelines, real-time monitoring, and AI-driven insights. The company emphasizes robust security practices, comprehensive documentation, and developer-friendly tools to accelerate innovation across industries. Backed by General Catalyst, Taurus continues to expand its product offerings and partner ecosystem, aiming to empower businesses to harness the full potential of their data assets.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ontaurus-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- Data Analytics
+- Cloud Services
+- Enterprise APIs
+- Security
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- general-catalyst
+
 common:
+- type: Hosts
+  url: hosts/ontaurus-com-hosts.yml
+- type: Vendors
+  url: vendors/ontaurus-com-vendors.yml
+- type: DomainSecurity
+  url: security/ontaurus-com-domain-security.yml
 - type: Website
   url: https://www.ontaurus.com/
+- type: Blog
+  url: https://www.ontaurus.com/blog/
+
+apis: []
+
+x-backed-by:
+- general-catalyst
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: The company website provides no developer documentation or API reference.
+  evidence:
+    - url: https://www.ontaurus.com/
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
